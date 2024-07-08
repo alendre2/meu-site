@@ -316,3 +316,48 @@ footer {
     border-radius: 5px;
     display: inline-block;
 }
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    #menu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .titulo-principal {
+        font-size: 36px;
+    }
+
+    #destaques {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destaque {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo-principal {
+        font-size: 24px;
+    }
+
+    .icone {
+        width: 24px;
+        height: 24px;
+    }
+
+    #formulario input[type="text"],
+    #formulario input[type="number"],
+    #formulario input[type="date"],
+    #formulario input[type="time"],
+    #formulario input[type="tel"],
+    #formulario textarea,
+    #formulario select,
+    #formulario button {
+        padding: 8px;
+        margin-bottom: 8px;
+    }
+}

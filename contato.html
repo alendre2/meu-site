@@ -1,73 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beluska Diversões - Contato</title>
-    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <div id="principal">
-        <h1 class="titulo-principal">Beluska Diversões</h1>
+        <header>
+            <h1 class="titulo-principal">Beluska Diversões</h1>
+        </header>
         
-        <div id="menu">
+        <nav id="menu">
             <a href="index.html" class="botao">HOME</a>
             <a href="quem-somos.html" class="botao">QUEM SOMOS</a>
             <a href="servicos.html" class="botao">NOSSOS SERVIÇOS</a>
             <a href="galeria.html" class="botao">GALERIA</a>
             <a href="contato.html" class="botao ativo">CONTATO</a>
-        </div>
+        </nav>
         
-        <div id="mensagem">
-            <h2>Entre em Contato</h2>
-            <p>Para mais informações ou para solicitar um orçamento, entre em contato conosco pelos canais abaixo.</p>
-        </div>
+        <main id="conteudo">
+            <section id="mensagem">
+                <h2>Entre em Contato</h2>
+                <p>Para mais informações ou para solicitar um orçamento, entre em contato conosco pelos canais abaixo.</p>
+            </section>
 
-        <div id="informacoes-contato">
-            <h3>Nossos Contatos</h3>
-            <ul>
-                <li><strong>Telefone:</strong> (81) 98590-1320</li>
-                <li><strong>E-mail:</strong> contato@beluskadiversoes.com</li>
-                <li><strong>WhatsApp:</strong> <a href="http://wa.me/5581985901320" target="_blank">(81) 98590-1320</a></li>
-                <li><strong>Instagram:</strong> <a href="https://www.instagram.com/beluskadiversoes/" target="_blank">@beluskadiversoes</a></li>
-            </ul>
-        </div>
+            <section id="informacoes-contato">
+                <h3>Nossos Contatos</h3>
+                <ul>
+                    <li><strong>Telefone:</strong> (81) 98590-1320</li>
+                    <li><strong>E-mail:</strong> <a href="mailto:contato@beluskadiversoes.com">contato@beluskadiversoes.com</a></li>
+                    <li><strong>WhatsApp:</strong> <a href="http://wa.me/5581985901320" target="_blank">(81) 98590-1320</a></li>
+                    <li><strong>Instagram:</strong> <a href="https://www.instagram.com/beluskadiversoes/" target="_blank">@beluskadiversoes</a></li>
+                </ul>
+            </section>
 
-        <div id="formulario">
-            <h3>Formulário de Contato</h3>
-            <form id="form-contato">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+            <section id="formulario">
+                <h3>Formulário de Contato</h3>
+                <form id="form-contato">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
 
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                    <label for="mensagem-texto">Mensagem:</label>
+                    <textarea id="mensagem-texto" name="mensagem" rows="4" required></textarea>
 
-                <button type="submit">Enviar Mensagem</button>
-            </form>
-        </div>
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </section>
+        </main>
 
-         <footer>
-        <div class="footer-container">
-            <div class="redes-sociais">
-                <a href="http://wa.me/5581985901320" target="_blank">
-                    <img src="imagens/whatsapp2.png" alt="WhatsApp" class="icone">
-                </a>
-                <a href="https://www.instagram.com/beluskadiversoes/" target="_blank">
-                    <img src="imagens/instagram.png" alt="Instagram" class="icone">
-                </a>
+        <footer>
+            <div class="footer-container">
+                <div class="redes-sociais">
+                    <a href="http://wa.me/5581985901320" target="_blank">
+                        <img src="imagens/whatsapp2.png" alt="WhatsApp" class="icone">
+                    </a>
+                    <a href="https://www.instagram.com/beluskadiversoes/" target="_blank">
+                        <img src="imagens/instagram.png" alt="Instagram" class="icone">
+                    </a>
+                </div>
+                <div class="copyright">
+                    &copy; 2024 Todos os direitos reservados. Desenvolvido por Beluska Diversões.
+                </div>
             </div>
-            <div class="copyright">
-                &copy; 2024 Todos os direitos reservados. Desenvolvido por Beluska Diversões.
-            </div>
-        </div>
-    </footer>
-
+        </footer>
     </div>
-
-    
 
     <script>
         document.getElementById('form-contato').addEventListener('submit', function(event) {
@@ -76,7 +77,7 @@
             // Captura dos dados do formulário
             const nome = document.getElementById('nome').value;
             const email = document.getElementById('email').value;
-            const mensagem = document.getElementById('mensagem').value;
+            const mensagem = document.getElementById('mensagem-texto').value;
 
             // Cria a URL do WhatsApp com a mensagem pré-preenchida
             const whatsappUrl = `https://wa.me/5581985901320?text=${encodeURIComponent(

@@ -8,134 +8,93 @@
 </head>
 <body>
     <div id="principal">
-                <h1 class="titulo-principal">Beluska Diversões</h1>
+        <header>
+            <h1 class="titulo-principal">Beluska Diversões</h1>
+        </header>
 
-        <div id="menu">
+        <nav id="menu">
             <a href="index.html" class="botao ativo">HOME</a>
             <a href="quem-somos.html" class="botao">QUEM SOMOS</a>
             <a href="servicos.html" class="botao">NOSSOS SERVIÇOS</a>
             <a href="galeria.html" class="botao">GALERIA</a>
             <a href="contato.html" class="botao">CONTATO</a>
-        </div>
-
+        </nav>
         
-        <div id="mensagem">
+        <section id="mensagem">
             <h2>Formulário de Orçamento</h2>
             <p>Para que possamos planejar e organizar uma experiência inesquecível em seu evento, por favor, preencha o formulário abaixo com as informações necessárias.</p>
-        </div>
+        </section>
 
-        <form id="formulario">
-            <label for="nome">Nome do(a) contratante:</label>
-            <input type="text" id="nome" name="nome" required>
-            
-            <label for="tipo_evento">Tipo do evento:</label>
-            <select id="tipo_evento" name="tipo_evento" required>
-                <option value="aniversario">Aniversário</option>
-                <option value="casamento">Casamento</option>
-                <option value="corporativo">Evento Corporativo</option>
-                <!-- Adicione mais opções conforme necessário -->
-            </select>
-            
-            <label for="nome_aniversariante">Nome do(a) aniversariante:</label>
-            <input type="text" id="nome_aniversariante" name="nome_aniversariante">
-            
-            <label for="idade_aniversariante">Idade do(a) aniversariante:</label>
-            <input type="number" id="idade_aniversariante" name="idade_aniversariante">
-            
-            <label for="tema_festa">Tema da festa:</label>
-            <input type="text" id="tema_festa" name="tema_festa">
-            
-            <label for="data_evento">Data do evento:</label>
-            <input type="date" id="data_evento" name="data_evento" required>
-            
-            <label for="horario">Horário:</label>
-            <input type="time" id="horario" name="horario">
-            
-            <label for="local">Local/endereço (com referência):</label>
-            <textarea id="local" name="local" rows="4"></textarea>
-            
-            <label for="quantidade_criancas">Quantidade de crianças:</label>
-            <input type="number" id="quantidade_criancas" name="quantidade_criancas">
-            
-            <label for="faixa_etaria">Faixa etária das crianças:</label>
-            <input type="text" id="faixa_etaria" name="faixa_etaria">
-            
-            <label for="brincadeiras_adultos">Deseja brincadeiras com adultos? (Sim/Não):</label>
-            <select id="brincadeiras_adultos" name="brincadeiras_adultos">
-                <option value="sim">Sim</option>
-                <option value="nao">Não</option>
-            </select>
-            
-            <label for="outro_contato">Outro número para contato:</label>
-            <input type="tel" id="outro_contato" name="outro_contato">
-            
-            <label for="observacao">Alguma observação importante:</label>
-            <textarea id="observacao" name="observacao" rows="4"></textarea>
-            
-            <button type="button" id="enviarWhatsapp">Solicitar Orçamento</button>
-        </form>
+        <section id="formulario">
+            <form>
+                <label for="nome">Nome do(a) contratante:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="tipo_evento">Tipo do evento:</label>
+                <select id="tipo_evento" name="tipo_evento" required>
+                    <option value="aniversario">Aniversário</option>
+                    <option value="casamento">Casamento</option>
+                    <option value="corporativo">Evento Corporativo</option>
+                    <!-- Adicione mais opções conforme necessário -->
+                </select>
+                
+                <label for="nome_aniversariante">Nome do(a) aniversariante:</label>
+                <input type="text" id="nome_aniversariante" name="nome_aniversariante">
+                
+                <label for="idade_aniversariante">Idade do(a) aniversariante:</label>
+                <input type="number" id="idade_aniversariante" name="idade_aniversariante">
+                
+                <label for="tema_festa">Tema da festa:</label>
+                <input type="text" id="tema_festa" name="tema_festa">
+                
+                <label for="data_evento">Data do evento:</label>
+                <input type="date" id="data_evento" name="data_evento" required>
+                
+                <label for="horario">Horário:</label>
+                <input type="time" id="horario" name="horario">
+                
+                <label for="local">Local/endereço (com referência):</label>
+                <textarea id="local" name="local" rows="4"></textarea>
+                
+                <label for="quantidade_criancas">Quantidade de crianças:</label>
+                <input type="number" id="quantidade_criancas" name="quantidade_criancas">
+                
+                <label for="faixa_etaria">Faixa etária das crianças:</label>
+                <input type="text" id="faixa_etaria" name="faixa_etaria">
+                
+                <label for="brincadeiras_adultos">Deseja brincadeiras com adultos? (Sim/Não):</label>
+                <select id="brincadeiras_adultos" name="brincadeiras_adultos">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+                
+                <label for="outro_contato">Outro número para contato:</label>
+                <input type="tel" id="outro_contato" name="outro_contato">
+                
+                <label for="observacao">Alguma observação importante:</label>
+                <textarea id="observacao" name="observacao" rows="4"></textarea>
+                
+                <button type="button" id="enviarWhatsapp">Solicitar Orçamento</button>
+            </form>
+        </section>
 
         <footer>
-        <div class="footer-container">
-            <div class="redes-sociais">
-                <a href="http://wa.me/5581985901320" target="_blank">
-                    <img src="imagens/whatsapp2.png" alt="WhatsApp" class="icone">
-                </a>
-                <a href="https://www.instagram.com/beluskadiversoes/" target="_blank">
-                    <img src="imagens/instagram.png" alt="Instagram" class="icone">
-                </a>
+            <div class="footer-container">
+                <div class="redes-sociais">
+                    <a href="http://wa.me/5581985901320" target="_blank">
+                        <img src="imagens/whatsapp2.png" alt="WhatsApp" class="icone">
+                    </a>
+                    <a href="https://www.instagram.com/beluskadiversoes/" target="_blank">
+                        <img src="imagens/instagram.png" alt="Instagram" class="icone">
+                    </a>
+                </div>
+                <div class="copyright">
+                    &copy; 2024 Todos os direitos reservados. Desenvolvido por Beluska Diversões.
+                </div>
             </div>
-            <div class="copyright">
-                &copy; 2024 Todos os direitos reservados. Desenvolvido por Beluska Diversões.
-            </div>
-        </div>
-    </footer>
-
+        </footer>
     </div>
 
-
-    <script>
-        document.getElementById('enviarWhatsapp').addEventListener('click', function() {
-            // Captura dos dados do formulário
-            const nome = document.getElementById('nome').value;
-            const tipoEvento = document.getElementById('tipo_evento').value;
-            const nomeAniversariante = document.getElementById('nome_aniversariante').value;
-            const idadeAniversariante = document.getElementById('idade_aniversariante').value;
-            const temaFesta = document.getElementById('tema_festa').value;
-            const dataEvento = document.getElementById('data_evento').value;
-            const horario = document.getElementById('horario').value;
-            const local = document.getElementById('local').value;
-            const quantidadeCriancas = document.getElementById('quantidade_criancas').value;
-            const faixaEtaria = document.getElementById('faixa_etaria').value;
-            const brincadeirasAdultos = document.getElementById('brincadeiras_adultos').value;
-            const outroContato = document.getElementById('outro_contato').value;
-            const observacao = document.getElementById('observacao').value;
-
-            // Montagem da mensagem para enviar via WhatsApp
-            let mensagem = `Olá! Gostaria de solicitar um orçamento!\n\n`;
-            mensagem += `Nome do(a) contratante: ${nome}\n`;
-            mensagem += `Tipo do evento: ${tipoEvento}\n`;
-            mensagem += `Nome do(a) aniversariante: ${nomeAniversariante}\n`;
-            mensagem += `Idade do(a) aniversariante: ${idadeAniversariante}\n`;
-            mensagem += `Tema da festa: ${temaFesta}\n`;
-            mensagem += `Data do evento: ${dataEvento}\n`;
-            mensagem += `Horário: ${horario}\n`;
-            mensagem += `Local/endereço: ${local}\n`;
-            mensagem += `Quantidade de crianças: ${quantidadeCriancas}\n`;
-            mensagem += `Faixa etária das crianças: ${faixaEtaria}\n`;
-            mensagem += `Deseja brincadeiras com adultos? ${brincadeirasAdultos}\n`;
-            mensagem += `Outro número para contato: ${outroContato}\n`;
-            mensagem += `Observação: ${observacao}`;
-
-            // Número de telefone da empresa no WhatsApp
-            const numeroWhatsapp = '5581985901320'; // Seu número de WhatsApp
-
-            // Montagem do link do WhatsApp
-            const linkWhatsapp = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(mensagem)}`;
-
-            // Abrir o WhatsApp em uma nova janela/tab
-            window.open(linkWhatsapp, '_blank');
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

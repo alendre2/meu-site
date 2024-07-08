@@ -5,24 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quem Somos - Beluska Diversões</title>
     <link rel="stylesheet" href="estilo.css">
+    <style>
+        /* Estilos específicos para animação dos elementos */
+        .section-content p, .section-header h1 {
+            opacity: 0;
+            animation: fadeInAnimation 0.5s ease-in-out forwards;
+        }
+
+        @keyframes fadeInAnimation {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
     <div id="principal">
-        <h1 class="titulo-principal">Beluska Diversões</h1>
+        <header>
+            <h1 class="titulo-principal">Beluska Diversões</h1>
+        </header>
         
-        <div id="menu">
+        <nav id="menu">
             <a href="index.html" class="botao">HOME</a>
             <a href="quem-somos.html" class="botao ativo">QUEM SOMOS</a>
             <a href="servicos.html" class="botao">NOSSOS SERVIÇOS</a>
             <a href="galeria.html" class="botao">GALERIA</a>
             <a href="contato.html" class="botao">CONTATO</a>
-        </div>
+        </nav>
 
-        <div id="conteudo">
-            <div class="section-header">
+        <main id="conteudo">
+            <section class="section-header">
                 <h1>Nossa História</h1>
-            </div>
-            <div class="section-content">
+            </section>
+            <section class="section-content">
                 <p>A Beluska Diversões surgiu com a missão de transformar momentos especiais em experiências inesquecíveis. Nossa equipe é apaixonada por proporcionar diversão e entretenimento de qualidade para todas as idades. Com um compromisso inabalável com a excelência, oferecemos serviços variados que garantem o sucesso de eventos diversos. Contamos com profissionais dedicados e experientes, prontos para tornar seu evento ainda mais especial. Confie na Beluska Diversões para momentos de pura alegria e diversão!</p>
 
                 <h2>Nossa Missão</h2>
@@ -42,33 +62,24 @@
                     <li>Oficinas recreativas</li>
                     <li>Eventos corporativos</li>
                 </ul>
-            </div>
+            </section>
+        </main>
 
-            <footer>
-                <div class="footer-container">
-                    <div class="redes-sociais">
-                        <a href="http://wa.me/5581985901320" target="_blank">
-                            <img src="imagens/whatsapp2.png" alt="WhatsApp" class="icone">
-                        </a>
-                        <a href="https://www.instagram.com/beluskadiversoes/" target="_blank">
-                            <img src="imagens/instagram.png" alt="Instagram" class="icone">
-                        </a>
-                    </div>
-                    <div class="copyright">
-                        &copy; 2024 Todos os direitos reservados. Desenvolvido por Beluska Diversões.
-                    </div>
+        <footer>
+            <div class="footer-container">
+                <div class="redes-sociais">
+                    <a href="http://wa.me/5581985901320" target="_blank">
+                        <img src="imagens/whatsapp2.png" alt="WhatsApp" class="icone">
+                    </a>
+                    <a href="https://www.instagram.com/beluskadiversoes/" target="_blank">
+                        <img src="imagens/instagram.png" alt="Instagram" class="icone">
+                    </a>
                 </div>
-            </footer>
-        </div>
+                <div class="copyright">
+                    &copy; 2024 Todos os direitos reservados. Desenvolvido por Beluska Diversões.
+                </div>
+            </div>
+        </footer>
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const elements = document.querySelectorAll('.section-content p, .section-header h1');
-            elements.forEach((el, index) => {
-                el.style.animationDelay = `${index * 0.2}s`;
-            });
-        });
-    </script>
 </body>
 </html>
