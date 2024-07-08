@@ -8,6 +8,8 @@
 </head>
 <body>
     <div id="principal">
+        <h1 class="titulo-principal">Beluska Diversões</h1>
+        
         <div id="menu">
             <a href="index.html" class="botao">HOME</a>
             <a href="quem-somos.html" class="botao">QUEM SOMOS</a>
@@ -46,21 +48,26 @@
                 <button type="submit">Enviar Mensagem</button>
             </form>
         </div>
-    </div>
 
-    <footer>
-        <div class="copyright">
-            &copy; 2024 Todos os direitos reservados. Desenvolvido por Beluska Diversões.
-        </div>
-        <div class="redes-sociais">
-            <a href="http://wa.me/5581985901320" target="_blank">
-                <img src="caminho/para/seu/icone-whatsapp.png" alt="WhatsApp">
-            </a>
-            <a href="https://www.instagram.com/beluskadiversoes/" target="_blank">
-                <img src="caminho/para/seu/icone-instagram.png" alt="Instagram">
-            </a>
+         <footer>
+        <div class="footer-container">
+            <div class="redes-sociais">
+                <a href="http://wa.me/5581985901320" target="_blank">
+                    <img src="imagens/whatsapp2.png" alt="WhatsApp" class="icone">
+                </a>
+                <a href="https://www.instagram.com/beluskadiversoes/" target="_blank">
+                    <img src="imagens/instagram.png" alt="Instagram" class="icone">
+                </a>
+            </div>
+            <div class="copyright">
+                &copy; 2024 Todos os direitos reservados. Desenvolvido por Beluska Diversões.
+            </div>
         </div>
     </footer>
+
+    </div>
+
+    
 
     <script>
         document.getElementById('form-contato').addEventListener('submit', function(event) {
@@ -71,13 +78,16 @@
             const email = document.getElementById('email').value;
             const mensagem = document.getElementById('mensagem').value;
 
-            // Aqui você pode adicionar a lógica para enviar os dados, como via AJAX
+            // Cria a URL do WhatsApp com a mensagem pré-preenchida
+            const whatsappUrl = `https://wa.me/5581985901320?text=${encodeURIComponent(
+                `Nome: ${nome}\nE-mail: ${email}\nMensagem: ${mensagem}`
+            )}`;
 
-            // Exemplo simples de exibição dos dados
+            // Abre a URL do WhatsApp em uma nova aba/janela
+            window.open(whatsappUrl, '_blank');
+
+            // Exemplo simples de exibição dos dados no console
             console.log(`Nome: ${nome}, E-mail: ${email}, Mensagem: ${mensagem}`);
-
-            // Você pode redirecionar ou mostrar uma mensagem de confirmação aqui
-            alert('Mensagem enviada com sucesso!');
 
             // Limpar o formulário após o envio
             document.getElementById('form-contato').reset();

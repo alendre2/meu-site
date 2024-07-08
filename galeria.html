@@ -3,51 +3,88 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Beluska Diversões - Galeria</title>
+    <title>Beluska Diversões - Contato</title>
     <link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
     <div id="principal">
+        <h1 class="titulo-principal">Beluska Diversões</h1>
         <div id="menu">
             <a href="index.html" class="botao">HOME</a>
             <a href="quem-somos.html" class="botao">QUEM SOMOS</a>
             <a href="servicos.html" class="botao">NOSSOS SERVIÇOS</a>
-            <a href="galeria.html" class="botao ativo">GALERIA</a>
-            <a href="contato.html" class="botao">CONTATO</a>
+            <a href="galeria.html" class="botao">GALERIA</a>
+            <a href="contato.html" class="botao ativo">CONTATO</a>
         </div>
         
-        <div id="mensagem">
-            <h2>Galeria de Fotos</h2>
-            <p>Confira algumas fotos dos nossos eventos e diversões.</p>
+        <div id="mensagem-intro">
+            <h2>Entre em Contato</h2>
+            <p>Para mais informações ou para solicitar um orçamento, entre em contato conosco pelos canais abaixo.</p>
         </div>
 
-        <div class="gallery">
-            <div class="gallery-item">
-                <img src="imagens/imagem1.jpg" alt="Descrição da Imagem 1">
-            </div>
-            <div class="gallery-item">
-                <img src="imagens/imagem1.jpg" alt="Descrição da Imagem 2">
-            </div>
-            <div class="gallery-item">
-                <img src="imagens/imagem1.jpg" alt="Descrição da Imagem 3">
-            </div>
-            <!-- Adicione mais itens conforme necessário -->
+        <div id="informacoes-contato">
+            <h3>Nossos Contatos</h3>
+            <ul>
+                <li><strong>Telefone:</strong> (81) 98590-1320</li>
+                <li><strong>E-mail:</strong> contato@beluskadiversoes.com</li>
+                <li><strong>WhatsApp:</strong> <a href="http://wa.me/5581985901320" target="_blank">(81) 98590-1320</a></li>
+                <li><strong>Instagram:</strong> <a href="https://www.instagram.com/beluskadiversoes/" target="_blank">@beluskadiversoes</a></li>
+            </ul>
+        </div>
+
+        <div id="formulario">
+            <h3>Formulário de Contato</h3>
+            <form id="form-contato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem-texto">Mensagem:</label>
+                <textarea id="mensagem-texto" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
         </div>
     </div>
 
     <footer>
-        <div class="copyright">
-            &copy; 2024 Todos os direitos reservados. Desenvolvido por Beluska Diversões.
-        </div>
-        <div class="redes-sociais">
-            <a href="http://wa.me/5581985901320" target="_blank">
-                <img src="caminho/para/seu/icone-whatsapp.png" alt="WhatsApp">
-            </a>
-            <a href="https://www.instagram.com/beluskadiversoes/" target="_blank">
-                <img src="caminho/para/seu/icone-instagram.png" alt="Instagram">
-            </a>
+        <div class="footer-container">
+            <div class="redes-sociais">
+                <a href="http://wa.me/5581985901320" target="_blank">
+                    <img src="imagens/whatsapp2.png" alt="WhatsApp" class="icone">
+                </a>
+                <a href="https://www.instagram.com/beluskadiversoes/" target="_blank">
+                    <img src="imagens/instagram.png" alt="Instagram" class="icone">
+                </a>
+            </div>
+            <div class="copyright">
+                &copy; 2024 Todos os direitos reservados. Desenvolvido por Beluska Diversões.
+            </div>
         </div>
     </footer>
 
+    <script>
+        document.getElementById('form-contato').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o envio padrão do formulário
+
+            // Captura dos dados do formulário
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const mensagem = document.getElementById('mensagem-texto').value;
+
+            // Exemplo simples de exibição dos dados
+            console.log(`Nome: ${nome}, E-mail: ${email}, Mensagem: ${mensagem}`);
+
+            // Você pode adicionar a lógica para enviar os dados, como via AJAX
+
+            // Exibição de mensagem de confirmação
+            alert('Mensagem enviada com sucesso!');
+
+            // Limpar o formulário após o envio
+            document.getElementById('form-contato').reset();
+        });
+    </script>
 </body>
 </html>
