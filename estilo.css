@@ -193,3 +193,92 @@ a:hover {
         5px 5px 0 #FFA500; /* Sombra de texto multicolorida */
     color: #D461DC; /* Cor do texto (pode ser qualquer cor de fundo) */
 }
+
+/* Estilos para a seção "NOSSA EQUIPE" */
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-header h1 {
+    font-size: 36px;
+    color: #D461DC;
+}
+
+.section-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.section-content p {
+    margin-bottom: 15px;
+}
+
+.section-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Estilos para os destaques */
+#destaques {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.destaque {
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px; /* Espaçamento inferior entre os destaques */
+}
+
+.imagem-descricao {
+    display: flex;
+    flex-direction: column; /* Coluna para empilhar imagem e descrição */
+    border-radius: 8px;
+}
+
+.imagem-descricao img {
+    width: 100%; /* Imagem ocupando 100% da largura do contêiner */
+    height: auto;
+    border-bottom: 2px solid #D461DC; /* Adiciona uma linha abaixo da imagem */
+}
+
+.descricao {
+    padding: 20px;
+}
+
+.descricao h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.descricao p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.botao-orcamento {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.botao-orcamento:hover {
+    background-color: #45a049;
+}
+
+/* Outros estilos continuam aqui conforme necessário */
