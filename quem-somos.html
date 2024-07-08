@@ -19,37 +19,56 @@
         </div>
 
         <div id="conteudo">
-    <div class="section-header">
-        <h1>NOSSA EQUIPE</h1>
-    </div>
-    <div class="section-content">
-        <p>Somos a Beluska Diversões, uma equipe especializada e apaixonada por tornar seu evento ainda mais divertido e memorável.</p>
-        <p>CONTE COM A Beluska Diversões</p>
-        <p>Oferecemos um serviço 5 estrelas com uma equipe altamente atualizada e dedicada, pronta para garantir o sucesso de todos os tipos de eventos.</p>
-        <p>DEDICAÇÃO</p>
-        <p>Amamos o que fazemos e nos dedicamos a proporcionar momentos de alegria e diversão para todos os nossos clientes. Para recreação infantil, conte com a Beluska Diversões.</p>
-    </div>
+            <div class="section-header">
+                <h1>Nossa História</h1>
+            </div>
+            <div class="section-content">
+                <p>A Beluska Diversões surgiu com a missão de transformar momentos especiais em experiências inesquecíveis. Nossa equipe é apaixonada por proporcionar diversão e entretenimento de qualidade para todas as idades. Com um compromisso inabalável com a excelência, oferecemos serviços variados que garantem o sucesso de eventos diversos. Contamos com profissionais dedicados e experientes, prontos para tornar seu evento ainda mais especial. Confie na Beluska Diversões para momentos de pura alegria e diversão!</p>
 
-    <footer>
-        <div class="footer-container">
-            <div class="redes-sociais">
-                <a href="http://wa.me/5581985901320" target="_blank">
-                    <img src="imagens/whatsapp2.png" alt="WhatsApp" class="icone">
-                </a>
-                <a href="https://www.instagram.com/beluskadiversoes/" target="_blank">
-                    <img src="imagens/instagram.png" alt="Instagram" class="icone">
-                </a>
+                <h2>Nossa Missão</h2>
+                <p>Nossa missão é criar experiências memoráveis que encantem e divirtam. Acreditamos que cada evento é único e merece ser tratado com carinho e dedicação. Trabalhamos com um time de profissionais apaixonados pelo que fazem, sempre prontos para superar as expectativas e trazer sorrisos para todos os participantes.</p>
+
+                <h2>Nossos Valores</h2>
+                <p><strong>Excelência:</strong> Buscamos sempre a excelência em tudo o que fazemos, desde o atendimento ao cliente até a execução dos nossos serviços.</p>
+                <p><strong>Criatividade:</strong> Inovamos constantemente para oferecer atividades divertidas e diferenciadas.</p>
+                <p><strong>Comprometimento:</strong> Comprometemo-nos a garantir a satisfação dos nossos clientes, cumprindo com seriedade todos os nossos compromissos.</p>
+                <p><strong>Diversão:</strong> Acreditamos que a diversão é essencial para a vida e nos dedicamos a proporcionar momentos alegres e inesquecíveis.</p>
+
+                <h2>O que Oferecemos</h2>
+                <p>Na Beluska Diversões, oferecemos uma ampla variedade de serviços para tornar seu evento um sucesso:</p>
+                <ul>
+                    <li>Animadores para festas</li>
+                    <li>Locação de brinquedos infláveis</li>
+                    <li>Oficinas recreativas</li>
+                    <li>Eventos corporativos</li>
+                </ul>
             </div>
-            <div class="copyright">
-                &copy; 2024 Todos os direitos reservados. Desenvolvido por Beluska Diversões.
-            </div>
+
+            <footer>
+                <div class="footer-container">
+                    <div class="redes-sociais">
+                        <a href="http://wa.me/5581985901320" target="_blank">
+                            <img src="imagens/whatsapp2.png" alt="WhatsApp" class="icone">
+                        </a>
+                        <a href="https://www.instagram.com/beluskadiversoes/" target="_blank">
+                            <img src="imagens/instagram.png" alt="Instagram" class="icone">
+                        </a>
+                    </div>
+                    <div class="copyright">
+                        &copy; 2024 Todos os direitos reservados. Desenvolvido por Beluska Diversões.
+                    </div>
+                </div>
+            </footer>
         </div>
-    </footer>
-
-</div>
-
-
-        
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.section-content p, .section-header h1');
+            elements.forEach((el, index) => {
+                el.style.animationDelay = `${index * 0.2}s`;
+            });
+        });
+    </script>
 </body>
 </html>

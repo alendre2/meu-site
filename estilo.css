@@ -3,22 +3,18 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: #D461DC url('imagens/fundo2.png');
-    background-size: cover; /* Ajusta a imagem para cobrir toda a área do fundo */
+    background: #D461DC url('imagens/fundo2.png') center/cover fixed;
 }
 
 /* Estilos para o contêiner principal */
 #principal {
-    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background: #F0F0F0 url('imagens/beluska.png') center;
+    background: #F0F0F0 url('imagens/beluska.png') center/cover;
     border: 1px solid red;
     position: relative;
     overflow: hidden;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 /* Estilos para o menu de navegação */
@@ -154,9 +150,9 @@ a:hover {
 /* Estilos para a galeria de fotos */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta as colunas conforme necessário */
-    gap: 20px; /* Espaçamento entre as imagens */
-    padding: 20px; /* Espaçamento interno */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
 .gallery-item {
@@ -167,31 +163,31 @@ a:hover {
 }
 
 .gallery-item img {
-    width: 100%; /* Imagem ocupa toda a largura do seu contêiner */
-    height: auto; /* Altura ajustada automaticamente para manter proporção */
+    width: 100%;
+    height: auto;
     display: block;
     transition: transform 0.3s ease-in-out;
 }
 
 .gallery-item:hover img {
-    transform: scale(1.05); /* Efeito de escala ao passar o mouse */
+    transform: scale(1.05);
 }
 
 /* Estilo para o título principal */
 .titulo-principal {
-    text-align: center; /* Alinhar centralizado */
-    font-size: 48px; /* Tamanho da fonte grande para destaque */
-    margin-top: 50px; /* Espaçamento superior generoso */
-    text-transform: uppercase; /* Transforma o texto em maiúsculas */
-    letter-spacing: 4px; /* Espaçamento entre letras para maior legibilidade */
-    font-family: 'Arial Black', sans-serif; /* Fonte mais robusta */
+    text-align: center;
+    font-size: 48px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: 'Arial Black', sans-serif;
     text-shadow: 
         1px 1px 0 #9B30FF,
         2px 2px 0 #FF4500,
         3px 3px 0 #32CD32,
         4px 4px 0 #FF69B4,
-        5px 5px 0 #FFA500; /* Sombra de texto multicolorida */
-    color: #D461DC; /* Cor do texto (pode ser qualquer cor de fundo) */
+        5px 5px 0 #FFA500;
+    color: #D461DC;
 }
 
 /* Estilos para a seção "NOSSA EQUIPE" */
@@ -235,19 +231,19 @@ a:hover {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    margin-bottom: 20px; /* Espaçamento inferior entre os destaques */
+    margin-bottom: 20px;
 }
 
 .imagem-descricao {
     display: flex;
-    flex-direction: column; /* Coluna para empilhar imagem e descrição */
+    flex-direction: column;
     border-radius: 8px;
 }
 
 .imagem-descricao img {
-    width: 100%; /* Imagem ocupando 100% da largura do contêiner */
+    width: 100%;
     height: auto;
-    border-bottom: 2px solid #D461DC; /* Adiciona uma linha abaixo da imagem */
+    border-bottom: 2px solid #D461DC;
 }
 
 .descricao {
@@ -281,20 +277,18 @@ a:hover {
     background-color: #45a049;
 }
 
-/* Outros estilos continuam aqui conforme necessário */
-
 /* Estilo para os ícones no rodapé */
 .icone {
-    width: 32px; /* Defina a largura do ícone */
-    height: 32px; /* Defina a altura do ícone */
-    margin: 0 10px; /* Espaçamento entre os ícones */
+    width: 32px;
+    height: 32px;
+    margin: 0 10px;
 }
 
 /* Estilo para o rodapé */
 footer {
-    background-color: #f1f1f1; /* Cor de fundo do rodapé */
-    padding: 20px 0; /* Espaçamento interno do rodapé */
-    text-align: center; /* Centraliza o texto */
+    background-color: #f1f1f1;
+    padding: 20px 0;
+    text-align: center;
 }
 
 .footer-container {
@@ -304,22 +298,21 @@ footer {
 }
 
 .redes-sociais {
-    margin-bottom: 10px; /* Espaçamento abaixo das redes sociais */
+    margin-bottom: 10px;
 }
 
 .redes-sociais a {
-    display: inline-block; /* Para garantir que o ícone seja tratado como bloco */
+    display: inline-block;
 }
 
 .redes-sociais img {
-    vertical-align: middle; /* Alinha os ícones verticalmente ao centro */
+    vertical-align: middle;
 }
 
 .copyright {
-    background-color: #333; /* Cor de fundo do texto de direitos reservados */
-    color: #fff; /* Cor do texto de direitos reservados */
-    padding: 10px 20px; /* Espaçamento interno do texto de direitos reservados */
-    border-radius: 5px; /* Bordas arredondadas */
-    display: inline-block; /* Para centralizar com background */
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
 }
-
