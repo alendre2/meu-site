@@ -1,0 +1,16 @@
+/* Estilos específicos para animação dos elementos */
+.section-content p, .section-header h1 {
+    opacity: 0;
+    animation: fadeInAnimation 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

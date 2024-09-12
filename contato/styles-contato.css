@@ -1,0 +1,135 @@
+/* Estilos gerais do site */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff99cc, #66ff66); /* Gradiente colorido */
+    color: #333;
+}
+
+#principal {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ffcc00; /* Cor vibrante para o cabeçalho */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.titulo-principal {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    background-color: #ff9900; /* Cor para o menu */
+}
+
+.botao {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #cc6600; /* Cor ao passar o mouse */
+}
+
+.botao.ativo {
+    background-color: #cc6600;
+}
+
+#conteudo {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+#mensagem {
+    margin-bottom: 20px;
+}
+
+#informacoes-contato {
+    margin-bottom: 30px;
+}
+
+#informacoes-contato ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#informacoes-contato li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+#formulario {
+    background-color: #ffcc00; /* Cor de fundo para o formulário */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+#formulario label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#formulario input, #formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#formulario button {
+    background-color: #ff9900; /* Cor do botão */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#formulario button:hover {
+    background-color: #cc6600; /* Cor ao passar o mouse */
+}
+
+footer {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.redes-sociais {
+    margin-bottom: 10px;
+}
+
+.icone {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.copyright {
+    font-size: 0.8em;
+}
